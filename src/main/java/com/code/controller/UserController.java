@@ -14,8 +14,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/users")
 @Tag(
-        name = "User Controller All CRUD API",
-        description = "This is the class that implements all the CRUD API related to user"
+        name = "User Controller All CRUD Operation API",
+        description = "This is the class that implements all the CRUD API Operation related to user"
 )
 public class UserController {
 
@@ -51,7 +51,7 @@ public class UserController {
 
 
     @Operation(
-            summary = "Find User By Using user_Id",
+            summary = "Find User By Id  Using user_Id",
             description = "Retrieve User By using user_Id"
     )
     @GetMapping("/{id}")
@@ -64,7 +64,7 @@ public class UserController {
 
 
     @Operation(
-            summary = "Update User In dattabse",
+            summary = "Update User In Database",
             description = "Update Information In Database"
     )
     @PutMapping("/{id}")
